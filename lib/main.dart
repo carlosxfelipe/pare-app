@@ -84,7 +84,8 @@ class DashboardScreen extends StatelessWidget {
             'Dashboard',
             style: TextStyle(color: Colors.black),
           ),
-          backgroundColor: Colors.amber),
+          backgroundColor: Colors.amber,
+          iconTheme: const IconThemeData(color: Colors.black)),
       drawer: const MainDrawer(),
       body: const Center(child: Text('Dashboard')),
     );
@@ -102,7 +103,8 @@ class FlashcardsScreen extends StatelessWidget {
             'Flashcards',
             style: TextStyle(color: Colors.black),
           ),
-          backgroundColor: Colors.amber),
+          backgroundColor: Colors.amber,
+          iconTheme: const IconThemeData(color: Colors.black)),
       drawer: const MainDrawer(),
       body: const Center(child: Text('Flashcards')),
     );
@@ -120,7 +122,8 @@ class StudyScreen extends StatelessWidget {
             'Estudar',
             style: TextStyle(color: Colors.black),
           ),
-          backgroundColor: Colors.amber),
+          backgroundColor: Colors.amber,
+          iconTheme: const IconThemeData(color: Colors.black)),
       drawer: const MainDrawer(),
       body: const Center(child: Text('Estudar')),
     );
@@ -138,7 +141,8 @@ class InstitutionsScreen extends StatelessWidget {
             'Instituições',
             style: TextStyle(color: Colors.black),
           ),
-          backgroundColor: Colors.amber),
+          backgroundColor: Colors.amber,
+          iconTheme: const IconThemeData(color: Colors.black)),
       drawer: const MainDrawer(),
       body: const Center(child: Text('Instituições')),
     );
@@ -156,7 +160,8 @@ class TestsScreen extends StatelessWidget {
             'Testes',
             style: TextStyle(color: Colors.black),
           ),
-          backgroundColor: Colors.amber),
+          backgroundColor: Colors.amber,
+          iconTheme: const IconThemeData(color: Colors.black)),
       drawer: const MainDrawer(),
       body: const Center(child: Text('Testes')),
     );
