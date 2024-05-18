@@ -60,10 +60,13 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
           title: const Text(
-            'Home',
+            'PARE',
             style: TextStyle(color: Colors.black),
           ),
-          backgroundColor: Colors.amber),
+          backgroundColor: Colors.amber,
+          iconTheme: const IconThemeData(
+              color: Colors.black) // Ícone do menu hambúrguer em preto
+          ),
       drawer: const MainDrawer(),
       body: const Center(child: Text('Bem-vindo à Home Screen!')),
     );
@@ -163,6 +166,8 @@ class TestsScreen extends StatelessWidget {
 class MainDrawer extends StatelessWidget {
   const MainDrawer({Key? key}) : super(key: key);
 
+  static const Color iconColor = Color(0xFF9C27B0);
+
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -182,36 +187,42 @@ class MainDrawer extends StatelessWidget {
             ),
           ),
           ListTile(
+            leading: const Icon(Icons.home, color: iconColor),
             title: const Text('Home'),
             onTap: () {
               context.go('/home');
             },
           ),
           ListTile(
+            leading: const Icon(Icons.dashboard, color: iconColor),
             title: const Text('Dashboard'),
             onTap: () {
               context.go('/dashboard');
             },
           ),
           ListTile(
+            leading: const Icon(Icons.flash_on, color: iconColor),
             title: const Text('Flashcards'),
             onTap: () {
               context.go('/flashcards');
             },
           ),
           ListTile(
+            leading: const Icon(Icons.school, color: iconColor),
             title: const Text('Estudar'),
             onTap: () {
               context.go('/study');
             },
           ),
           ListTile(
+            leading: const Icon(Icons.business, color: iconColor),
             title: const Text('Instituições'),
             onTap: () {
               context.go('/institutions');
             },
           ),
           ListTile(
+            leading: const Icon(Icons.quiz, color: iconColor),
             title: const Text('Testes'),
             onTap: () {
               context.go('/tests');
