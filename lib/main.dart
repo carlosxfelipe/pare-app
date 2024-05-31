@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:pare/screens/flashcards_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -92,24 +93,24 @@ class DashboardScreen extends StatelessWidget {
   }
 }
 
-class FlashcardsScreen extends StatelessWidget {
-  const FlashcardsScreen({Key? key}) : super(key: key);
+// class FlashcardsScreen extends StatelessWidget {
+//   const FlashcardsScreen({Key? key}) : super(key: key);
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-          title: const Text(
-            'Flashcards',
-            style: TextStyle(color: Colors.black),
-          ),
-          backgroundColor: Colors.amber,
-          iconTheme: const IconThemeData(color: Colors.black)),
-      drawer: const MainDrawer(),
-      body: const Center(child: Text('Flashcards')),
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//           title: const Text(
+//             'Flashcards',
+//             style: TextStyle(color: Colors.black),
+//           ),
+//           backgroundColor: Colors.amber,
+//           iconTheme: const IconThemeData(color: Colors.black)),
+//       drawer: const MainDrawer(),
+//       body: const Center(child: Text('Flashcards')),
+//     );
+//   }
+// }
 
 class StudyScreen extends StatelessWidget {
   const StudyScreen({Key? key}) : super(key: key);
