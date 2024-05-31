@@ -56,7 +56,7 @@ class FlashcardsScreenState extends State<FlashcardsScreen> {
       ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: const Color(0xFF9C27B0),
-        child: const Icon(Icons.add),
+        child: const Icon(Icons.add, color: Colors.white),
         onPressed: () {
           // Função para adicionar um novo deck
           _showAddDeckDialog();
